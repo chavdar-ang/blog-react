@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
     return (
         <div className="Header bg-purple">
-            <div class="Header-item">
+            <div className="Header-item">
                 <Link to="/" className="Header-link f4 d-flex flex-items-center">
                     <span>A blog</span>
                 </Link>
@@ -15,7 +15,7 @@ function Navbar() {
                     Index
                 </Link>
             </div>
-            <div class="Header-item">
+            <div className="Header-item">
                 <Link to="/show" className="Header-link">
                     Single
                 </Link>

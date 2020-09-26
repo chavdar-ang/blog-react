@@ -1,14 +1,14 @@
 import React from 'react';
 import Featured from './Featured';
 import Categories from './Categories';
-import Article from './Article';
+import ArticleList from './ArticleList';
 
 function BlogIndex() {
   return (
     <>
       <Featured />
       <Categories />
-      <Article />
+      <ArticleList />
     </>
   );
 }

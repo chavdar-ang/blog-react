@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 function Categories() {
     return (
-        <section class="blog-categories flex">
-            <div class="Box hover-grow">
+        <section className="blog-categories flex">
+            <div className="Box hover-grow">
                 <Link to="#" className="p-2 d-block">
                     <h4>Company</h4>
                 </Link>
@@ -16,7 +16,7 @@ function Categories() {
                 </div>
             </div>
 
-            <div class="Box hover-grow">
+            <div className="Box hover-grow">
                 <Link to="#" className="p-2 d-block">
                     <h4>Community</h4>
                 </Link>
