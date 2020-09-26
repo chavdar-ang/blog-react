@@ -6,9 +6,11 @@ const list = [
     {
         _id: 1,
         title: "GitHub Action Hero · James Ives and “GitHub Pages Deploy”",
+        slug: "github-action-hero-james-ives-and-github-pages-deploy",
         body: "GitHub Actions gives you the power to automate your workflow. Connect with the tools you know and love. Have more freedom to innovate and be creative.",
         author: {
             name: "Michelle Mannering",
+            username: "micha",
             avatar: "avatar.jpg"
         },
         categories: [
@@ -30,9 +32,11 @@ const list = [
     {
         _id: 2,
         title: "Introducing the GitHub Stars Program",
+        slug: "introducing-the-github-stars-program",
         body: "GitHub is home to the world’s largest community of developers who share their code, work together, and build amazing things. But out of those millions of developers on GitHub, there are a few who go above and beyond in helping others in the developer space – not just by maintaining projects but by helping educate, inspire and influence the online and in-person communities in which they live and work.",
         author: {
             name: "Anisha Pindoria",
+            username: "nisha",
             avatar: "avatar.jpg"
         },
         categories: [

@@ -7,7 +7,7 @@ function Article({ item }) {
         <article className="post-item d-flex flex-column flex-md-row mb-8 px-sm-0">
 
             <div className="col-12 col-md-3">
-                <Link to="#">
+                <Link to={item.slug}>
                     <time dateTime={item.published_at}>
                         { dayjs(item.published_at).format('MMMM DD, YYYY') }
                     </time>
@@ -27,7 +27,7 @@ function Article({ item }) {
                 </ul>
 
                 <h4 className="f3 mb-4">
-                    <Link to="#">
+                    <Link to={item.slug}>
                         { item.title }
                     </Link>
                 </h4>
@@ -38,7 +38,7 @@ function Article({ item }) {
                     </p>
                 </div>
 
-                <Link to="#" className="d-inline-flex flex-row flex-items-center">
+                <Link to={'/author/' + item.author.username} className="d-inline-flex flex-row flex-items-center">
                     <div className="mr-3">
                         <img alt="Michelle Mannering" src="/img/avatar.jpg" className="avatar avatar-35 photo avatar-default" height="35" width="35" />
                     </div>
