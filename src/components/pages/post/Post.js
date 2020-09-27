@@ -1,8 +1,13 @@
 import React from 'react';
+import Article from './Article';
+import Related from './Related';
 
 function Show() {
-  return (
-    <div>Blog single</div>
+  return (   
+    <main>
+      <Article />
+      <Related />
+    </main>
   );
 }
 

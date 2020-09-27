@@ -10,10 +10,12 @@ function App() {
     <div className="container-lg">
       <BrowserRouter>
         <Navbar />
-        <Switch>
-          <Route exact path="/" component={Blog} />
-          <Route path="/show" component={Post} />
-        </Switch>
+          <main>
+            <Switch>
+              <Route exact path="/" component={Blog} />
+              <Route path="/single" component={Post} />
+            </Switch>
+          </main>
         <Footer />
       </BrowserRouter>
     </div>
