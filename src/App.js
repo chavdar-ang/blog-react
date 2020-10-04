@@ -12,7 +12,9 @@ import Alert from './components/layout/Alert';
 
 // Redux
 import { Provider } from 'react-redux';
-import store from './store';
+import configureStore from './store/configureStore';
+
+const store = configureStore();
 
 function App() {
   return (

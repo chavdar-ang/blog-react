@@ -5,10 +5,11 @@ import ArticleList from './ArticleList';
 
 // test
 import { connect } from 'react-redux';
-import { setAlert } from '../../../actions/alert';
+import { addAlert } from '../../../store/alerts';
 
 function Blog(props) {
-  props.setAlert('test message', 'success');
+  props.addAlert({ message: 'test message', alertType: 'success' });
+  props.addAlert({ message: 'test message 1', alertType: 'success' });
   return (
     <main>
       <Featured />
@@ -18,4 +19,4 @@ function Blog(props) {
   );
 }
 
-export default connect(null, { setAlert })(Blog);
+export default connect(null, { addAlert })(Blog);
