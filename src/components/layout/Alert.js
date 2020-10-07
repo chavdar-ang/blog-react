@@ -1,8 +1,9 @@
 import React from 'react';
-import propTypes from 'prop-types';
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 
-const Alert = ({ alerts }) => {
+const Alert = () => {
+    const alerts = useSelector(state => state.alerts)
+    console.log(alerts);
     return alerts !== null &&
     alerts.length > 0 &&
     alerts.map(alert => (
@@ -10,12 +11,4 @@ const Alert = ({ alerts }) => {
     ));
 }
 
-Alert.propTypes = {
-    alerts: propTypes.array.isRequired
-}
-
-const mapStateToProps = state => ({
-    alerts: state.alert
-});
-
-export default connect(mapStateToProps)(Alert);
+export default Alert;

@@ -19,7 +19,6 @@ export const { alertAdded, alertRemoved } = slice.actions;
 export default slice.reducer;
 
 export const addAlert = alert => dispatch => {
-    // const { lastFetch } = getState().entities.bugs;
     let id = uuid();
   
     dispatch({
@@ -40,22 +39,3 @@ export const addAlert = alert => dispatch => {
         })
     }, 3000);
   };
-
-
-
-// export const setAlert = (message, alertType) => dispatch => {
-//     const id = uuid;
-
-//     dispatch({
-//         type: SET_ALERT,
-//         payload: {
-//             id,
-//             message,
-//             alertType
-//         }
-//     });
-
-//     setTimeout(() => {
-//         dispatch({ type: REMOVE_ALERT, payload: id })
-//     }, 3000);
-// }
