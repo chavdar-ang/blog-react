@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-import { addAlert } from './store/alerts';
-
 import configureStore from './store/configureStore';
+
+// import { addAlert } from './store/alerts';
 
 const store = configureStore();
 
@@ -24,5 +24,5 @@ store.dispatch({
   }
 });
 
-// store.dispatch(addAlert({ message: 'test message 1', alertType: 'success' }));
-// store.dispatch(addAlert({ message: 'test message 1', alertType: 'success' }));
+
+// store.dispatch(addAlert({ message: 'test', alertType: 'warning' }));

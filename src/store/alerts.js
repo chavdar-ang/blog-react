@@ -20,9 +20,11 @@ export default slice.reducer;
 
 export const addAlert = alert => dispatch => {
     let id = uuid();
+
+    // console.log(alert);
   
     dispatch({
-        type: alertAdded,
+        type: "alertAdded",
         payload: {
             id: id,
             message: alert.message,
@@ -30,12 +32,12 @@ export const addAlert = alert => dispatch => {
         }
     });
 
-    setTimeout(() => {
-        dispatch({
-            type: alertRemoved,
-            payload: {
-                id: id
-            }
-        })
-    }, 3000);
+    // setTimeout(() => {
+    //     dispatch({
+    //         type: alertRemoved.type,
+    //         payload: {
+    //             id: id
+    //         }
+    //     })
+    // }, 3000);
   };
