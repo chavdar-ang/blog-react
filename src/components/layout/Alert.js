@@ -3,8 +3,7 @@ import { useSelector } from 'react-redux'
 
 
 const Alert = () => {
-    const alerts = useSelector(state => state.alerts)
-    console.log(alerts);
+    const alerts = useSelector(state => state.alerts);
     return alerts &&
     alerts.length > 0 &&
     alerts.map(alert => (

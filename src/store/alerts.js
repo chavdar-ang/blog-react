@@ -20,8 +20,6 @@ export default slice.reducer;
 
 export const addAlert = alert => dispatch => {
     let id = uuid();
-
-    console.log(alert);
   
     dispatch({
         type: alertAdded.type,

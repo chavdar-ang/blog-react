@@ -16,10 +16,10 @@ import configureStore from './store/configureStore';
 import { addAlert } from './store/alerts';
 
 const store = configureStore();
-store.dispatch(addAlert({ message: 'test', alertType: 'warning' }));
+store.dispatch(addAlert({ message: 'warning type alert', alertType: 'warning' }));
+store.dispatch(addAlert({ message: 'danger type alert', alertType: 'danger' }));
 
 function App() {
-  console.log(store.getState());
   return (
     <div className="container-lg">
       <Provider store={store}>
