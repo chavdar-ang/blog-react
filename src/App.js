@@ -24,10 +24,10 @@ const store = configureStore();
 store.dispatch(addAlert({ message: 'warning type alert', alertType: 'warning' }));
 store.dispatch(addAlert({ message: 'danger type alert', alertType: 'danger' }));
 
-store.dispatch(actions.apiCallBegan({
-  url: "/threads",
-  onSuccess: "threadsReceived",
-}));
+// store.dispatch(actions.apiCallBegan({
+//   url: "/threads",
+//   onSuccess: "threadsReceived",
+// }));
 
 function App() {
   return (
